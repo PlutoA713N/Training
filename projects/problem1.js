@@ -62,6 +62,6 @@ function problem1(inventory, id){
     }
 }
 
-const data = problem1(inventory, 33)
+const data = problem1(inventory, 33);
 console.log(data) // Car 33 is a 2011 Jeep Wrangler
 

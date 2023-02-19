@@ -4,7 +4,7 @@
 
 var brands = problem3( inventory );
 console.log( brands );
-/* Output
+/* Output 
 
 [
   'Audi',          'BMW',

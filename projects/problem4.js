@@ -1,6 +1,17 @@
 function problem4(inventory){
     const list = new Array()
   for(let i = 0; i < inventory.length; i++) {
+      list.push( inventory[i].car_year )
+  }
+     return list;
+}
+
+const years = problem4(inventory)
+console.log( years );
+
+function problem4(inventory){
+    const list = new Array()
+  for(let i = 0; i < inventory.length; i++) {
       const carData = Object.entries( inventory[i] )[3][1]
       list.push( carData )
   }

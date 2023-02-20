@@ -1,6 +1,6 @@
-const carsAfter2000 = problem5( years );
+const carsAfter2000 = problem5(invetory, years );
 console.log( carsAfter2000 )
-// Output 21
+// Output is an array list of cars before2000, carsList, count of carsAfter2000 
 
 const years = [
   2009, 2001, 2010, 1983, 1990, 1995,

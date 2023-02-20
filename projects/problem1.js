@@ -51,6 +51,23 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 {"id":49,"car_make":"Chrysler","car_model":"Sebring","car_year":1996},
 {"id":50,"car_make":"Lincoln","car_model":"Town Car","car_year":1999}];
 
+// Solutions:
+
+function problem1(inventory, id){
+    for(let i = 0; i < inventory.length; i++){
+      const info = inventory[i]
+      if( info.id == id ){
+         return (`Car ${id} is a ${info.car_year} ${info.car_make} ${info.car_model}`)
+      }
+    }
+}
+
+const car_Data = problem1(inventory, 33);
+console.log(car_Data)
+// Output 
+// Car 33 is a 2011 Jeep Wrangler
+
+
 function problem1(inventory, id){
     for(let i = 0; i < inventory.length; i++){
     var carData = Object.entries(inventory[i])

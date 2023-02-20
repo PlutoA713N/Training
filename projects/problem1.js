@@ -79,6 +79,23 @@ function problem1(inventory, id){
     }
 }
 
-const data = problem1(inventory, 33);
-console.log(data) // Car 33 is a 2011 Jeep Wrangler
+const car_data = problem1(inventory, 33);
+console.log(car_data) // Car 33 is a 2011 Jeep Wrangler
+
+
+// Using a Filter
+
+function problem1(inventory, id){
+   let data = 0;
+   inventory.filter( cars => {
+        if(cars.id == id){
+         data = (`Car ${id} is a ${cars.car_year} ${cars.car_make} ${cars.car_model}`)
+        }
+    })
+    return data;
+}
+
+const car_Data = problem1(inventory, 33);
+console.log(car_Data) // Car 33 is a 2011 Jeep Wrangler
+
 

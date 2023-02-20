@@ -1,3 +1,14 @@
+
+// solution 1
+function problem2(inventory){
+    const lastCarId = inventory.length
+    return console.log(`Last car is a ${inventory[lastCarId-1].car_make} ${inventory[lastCarId-1].car_model}`)
+}
+
+var lastCarData = problem2(inventory)
+console.log( lastCarData ) // Last car is a Lincoln Town Car
+
+// solution 2
 function problem2(inventory){
     for(let i = 0; i < inventory.length; i++){
         var carData = Object.entries(inventory[i]);
@@ -11,7 +22,7 @@ function problem2(inventory){
 var lastCarData = problem2(inventory)
 console.log( lastCarData ) // Last car is a Lincoln Town Car
 
-// solution 2
+// solution 3
 
 function problem2(inventory){
   var carData = Object.entries( inventory[inventory.length-1] )

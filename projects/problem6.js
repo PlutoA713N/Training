@@ -10,6 +10,23 @@ function problem6(inventory){
 
 const bestCars = problem6( inventory )
 console.log( bestCars );
+
+//Using reduce function
+
+function problem6(inventory){
+   return JSON.stringify( inventory.reduce((target, cars) => {
+        if(cars.car_make == 'BMW' || cars.car_make == "Audi" ){
+            target.push(cars)
+        }
+        return target;
+    }, []) , "", 1);
+}
+
+const bestCars = problem6( inventory )
+console.log( bestCars );
+
+
+
 /* Output
 [
  {

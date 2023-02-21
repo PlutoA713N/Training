@@ -20,6 +20,18 @@ function problem4(inventory){
 
 const years = problem4(inventory)
 console.log( years );
+
+// Using an array.prototype.map()
+
+function problem4(inventory){
+    return inventory.map(cars => {
+        return cars.car_year
+    })
+}
+
+const years = problem4(inventory)
+console.log( years );
+
 /* Output :
 
 [

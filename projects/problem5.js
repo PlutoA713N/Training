@@ -13,6 +13,25 @@ function problem5( inventory, years ){
 
 const carsAfter2000 = problem5( inventory, years );
 console.log( carsAfter2000 );
+
+// Using reduce
+function problem5( inventory, years ){
+   var before2000 = 0;
+  const after2000cars = years.reduce((array, year,i)=> {
+      if(year > 2000){
+         array.push(inventory[i])
+      }else{
+          before2000+=1;
+      }
+      return array;
+  }, [])
+  return [before2000, after2000cars, after2000cars.length]
+}
+
+const carsAfter2000 = problem5( inventory, years );
+console.log( carsAfter2000 );
+
+
 /* Output
 [
 [29,

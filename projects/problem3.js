@@ -7,6 +7,19 @@ function problem3(inventory){
 
 var brands = problem3 (inventory)
 console.log( brands )
+
+// Using a map
+function problem3(inventory){
+   return inventory.map(cars => {
+         return cars
+   })
+   .sort((carA, carB)=> {
+       return carA.car_model.localeCompare(carB.car_model)
+   })
+}
+
+var brands = problem3 (inventory)
+console.log( brands )
 // Output
 
 [

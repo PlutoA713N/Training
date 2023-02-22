@@ -25,3 +25,46 @@ var snakeCaseCapsOutput = 'I_LIKE_SNAKES'
 //Mostly used in Urls.
 var kebabInput = "this is a site link";
 var kebabOutput = "this-is-a-site-link";
+
+// We gotta pick one of the styles from this or search for an alternative style im Google, try to stick wih it, to improve readability and naming.
+
+// Dealing with the Loop Variables :
+
+//Naming the loop variables
+var array = [1, 2, 3],
+     n = array.length;
+
+// bad usage:
+
+for( let i = 0; i < n ; i++){
+    console.log(i)
+}
+
+// good Usage
+
+for( let index = 0; index < array.length; index++){
+    console.log( array[index] );
+}
+
+// Also for arrow functions
+
+const sum = array.reduce((total, number, index, array) => {
+    total += array[index]
+    return total;
+},0)
+console.log( sum ); // 6
+
+// Even for matrixes the best usage is..to name those variables
+
+const array2d = [[1,2,3],[4,5,6], [7,8,9]]
+
+for( let rowIndex = 0; rowIndex < array2d.length ; rowIndex++){
+    // Accessing the Rows;
+    const row = array2d[ rowIndex ] 
+   for( let columnIndex = 0; columnIndex < row.length; columnIndex++){
+       // Accesing the column numbers
+       const column =  array2d[columnIndex][rowIndex]
+       console.log( row[columnIndex] )
+   }
+}
+

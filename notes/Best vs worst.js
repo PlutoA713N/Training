@@ -68,3 +68,18 @@ for( let rowIndex = 0; rowIndex < array2d.length ; rowIndex++){
    }
 }
 
+
+// Maintaining the space between declarations and function operations
+// for better readability
+
+var element = "something",
+    element2 = "something2",
+    element3 = "something3";
+// separating a declared variables and the function operation with space for more readability    
+function doSomething(element) {
+    if( typeof element ){
+        console.log(element + element2 + element3)
+    }
+}
+// separating a function operation with space
+doSomething(element2)

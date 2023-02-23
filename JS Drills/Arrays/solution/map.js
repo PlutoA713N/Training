@@ -12,3 +12,5 @@ function map(array, callback){
     }
    return ar;
 }
+
+map( array, callback function) // Output- returns an array of values;

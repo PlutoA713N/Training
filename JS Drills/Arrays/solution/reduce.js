@@ -8,7 +8,7 @@
 
 
 function reduce(array, callback, accumulator){
-    if( Array.isArray(array) ){
+    if( Array.isArray(array) && array.length > 0 ){
        for(let index = 0; index < array.length; index++){
            if( accumulator == undefined && index == 0){
                accumulator = array[0]

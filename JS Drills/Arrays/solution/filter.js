@@ -4,12 +4,14 @@
 // Else empty array will be returned.
 
 function filter(array, callback){
-    var filterdValues = []
-    for(let index = 0; index < array.length; index++){
-        if( callback( array[index], index, array)){
+    var filterdValues = [];
+    if( Array.isArray(array) ){
+        for(let index = 0; index < array.length; index++){
+           if( callback( array[index], index, array)){
             filterdValues.push( (array[index]) )
+           }
         }
-    }
+     }   
     return filterdValues;
 }
 ( filter( [1,2,3,4,5,6], (value,index) => {

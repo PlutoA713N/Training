@@ -6,11 +6,14 @@
 function pairs( obj ){
     const twins = new Array();
     
-    for(let key in obj){
+    if(testObject.constructor == Object){
+       for(let key in obj){
        twins.push( [ key, obj[key] ] )
-    }
+       }
     
     return twins;
+    }
+    return undefined;
 }
 
 console.log ( pairs( testObject)  )

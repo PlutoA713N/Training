@@ -14,6 +14,18 @@ function mapObject( testObject, callback ){
     return testObject;
 }
 
+//Without modification of an orginal Array;
+
+function mapObject( obj, callback ){
+    const map = new Object()
+  
+    for( let key in obj) {
+       map[key] = callback( obj[key], key, obj)
+    }
+   
+   return map; 
+} 
+
 console.log( mapObject ( {start: 5, end: 12}, value => {
    return  value * 5;
 }) ) // Output - { start: 25, end: 60 }

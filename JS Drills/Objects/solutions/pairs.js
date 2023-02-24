@@ -6,7 +6,8 @@
 function pairs( obj ){
     const twins = new Array();
     
-    if(testObject.constructor == Object){
+    if(obj.constructor == Object){
+     
        for(let key in obj){
        twins.push( [ key, obj[key] ] )
        }

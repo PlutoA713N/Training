@@ -7,7 +7,7 @@ function mapObject( testObject, callback ){
     
     if(testObject.constructor == Object){
         for( let key in testObject ){
-            testObject[key] = callback( testObject[key] )
+            testObject[key] = callback( testObject[key], key, testObject )
         }
     }
     

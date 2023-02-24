@@ -10,7 +10,7 @@ function keys( testObject ){
     
     if( testObject.constructor == Object){
        for(let key in testObject){
-       console.log(key)
+      // console.log(key)
        objectKeys.push(key)  
         }
     return objectKeys;

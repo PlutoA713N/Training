@@ -28,6 +28,18 @@ function defaults( obj, defaultProps){
   return object; 
 }
 
+function defaults(obj, defaultProp){
+ 
+  for(let key in defaultProp){
+      if( !obj.hasOwnProperty(key) && !obj[key]){
+          obj[key] = defaultProp[key]
+      }
+  }
+  
+  return obj;
+}
+
+
 var iceCream = {flavor: "chocolate"};
 
 var k =  {flavor: "vanilla", sprinkles: "lots"}

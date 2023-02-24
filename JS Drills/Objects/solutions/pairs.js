@@ -12,7 +12,7 @@ function pairs( obj ){
        twins.push( [ key, obj[key] ] )
        }
     
-    return twins;
+       return twins;
     }
     return undefined;
 }

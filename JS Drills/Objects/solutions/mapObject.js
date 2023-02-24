@@ -18,12 +18,15 @@ function mapObject( testObject, callback ){
 
 function mapObject( obj, callback ){
     const map = new Object()
-  
-    for( let key in obj) {
+ 
+    if(obj.constructor == Object){
+       for( let key in obj) {
        map[key] = callback( obj[key], key, obj)
     }
    
-   return map; 
+       return map; 
+    }
+    return undefined;
 } 
 
 console.log( mapObject ( {start: 5, end: 12}, value => {

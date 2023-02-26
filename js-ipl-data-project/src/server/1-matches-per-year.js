@@ -1,20 +1,23 @@
 // 1.Number of matches played per year for all the years in IPL.
+
 const folder = require('fs');
 
 const csv = require('csv-parser');
 
-const iplMatchesPerYear = {};
-      columns = ['season'];
+const iplMatchesPerYear = new Object(),
+      columns = ['id','season'];
 
 
 folder.createReadStream('matches.csv')
 .pipe(csv ({headers: columns}))
 .on('data', (data) => {
-    if(!iplMatchesPerYear.hasOwnProperty(data._1)){
-       iplMatchesPerYear[data._1] = 1;
-     }else{
-        iplMatchesPerYear[data._1] += 1;
+    
+    if(iplMatchesPerYear.hasOwnProperty(data.season)){
+       iplMatchesPerYear[data.season] += 1;
+     }else if(data.season != "season"){
+        iplMatchesPerYear[data.season] = 1;
      }
+    
 })
 .on('end', () => {
     console.log( iplMatchesPerYear )
@@ -30,6 +33,6 @@ folder.createReadStream('matches.csv')
   '2014' : 60,
   '2015' : 59,
   '2016' : 60,
-  '2017' : 59,
-  season : 1
-  }
+  '2017' : 59
+   }
+  

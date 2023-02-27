@@ -19,8 +19,8 @@ file.createReadStream('deliveries.csv')
           team2 = data.bowling_team,
           extraRuns = data.extra_runs;
 
-   if( !extraRunsConcededIn2016[team1] ){
-        extraRunsConcededIn2016[team1] = 0;
+  // if( !extraRunsConcededIn2016[team1] ){
+  //      extraRunsConcededIn2016[team1] = 0; 
     }
    if( !extraRunsConcededIn2016[team2] ){
        extraRunsConcededIn2016[team2] = 0;

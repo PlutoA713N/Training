@@ -21,7 +21,7 @@ file.createReadStream('deliveries.csv')
 
   // if( !extraRunsConcededIn2016[team1] ){
   //      extraRunsConcededIn2016[team1] = 0; 
-    }
+  //   }
    if( !extraRunsConcededIn2016[team2] ){
        extraRunsConcededIn2016[team2] = 0;
    }

@@ -44,6 +44,14 @@ console.countReset(); // works only for default Counts,  for labelled counts, we
 
 console.countReset() // It resets the count to 0.
 
+// console.time() it starts recording of a time at the point, it records until console.timeEnds() is called.
+// console.timeLog() , it'll display the time logs anywhere in between console.time() && console.timeEnd();
+console.time("Timer");
+for(let count = 0; count < 5; count++){
+    console.timeLog("Timer");
+}
+console.timeEnd("Timer");
+
 // To add some flavors in an output text
 // In order to use css style , console.log( %c input, css styles input);
 

@@ -43,3 +43,10 @@ console.countReset(); // works only for default Counts,  for labelled counts, we
 };
 
 console.countReset() // It resets the count to 0.
+
+// To add some flavors in an output text
+// In order to use css style , console.log( %c input, css styles input);
+
+const cssMessage = "This is My CSS Message";
+console.log('%c ' + cssMessage, 'color: red;');
+ 

@@ -49,4 +49,32 @@ console.countReset() // It resets the count to 0.
 
 const cssMessage = "This is My CSS Message";
 console.log('%c ' + cssMessage, 'color: red;');
- 
+
+/* Output:
+// Grouped the output using console.group() && console.groupEnd();
+
+My Consoles
+┌─────────┬───────────┐
+  │ (index) │  Values   │
+  ├─────────┼───────────┤
+  │    0    │ 'Value 1' │
+  │    1    │ 'Value 2' │
+  └─────────┴───────────┘
+┌─────────┬────────┬───────────┐
+  │ (index) │  name  │ location  │
+  ├─────────┼────────┼───────────┤
+  │ object  │ 'user' │ 'unknown' │
+  └─────────┴────────┴───────────┘
+  Group Label
+    group 1
+    group 2
+    Nested Group
+      Inner group 3
+Assertion failed: Value is Falsy
+default: 1
+default: 1
+default: 1
+default: 1
+   This is My CSS Message
+*/
+

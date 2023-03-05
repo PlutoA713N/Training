@@ -28,6 +28,7 @@ until the condition is true, if the condition is false, it stops the flow of the
 **Incrementing/Decrementing** - It increments/decrements the statements such as initilisation statement. It keeps 
 on Increments/decrements until the condition is true.
 
+**Example**
 ``` JavaScript
    for( const index = 0; index < 3; index++ ){
       console.log( index ); 

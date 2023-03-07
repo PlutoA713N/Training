@@ -1,5 +1,6 @@
 # ReadAbility
-In a code, we'll see the following parts when we consider reading others codes
+In a code, we'll see the following parts when we consider reading others codes. Its the simplest way of assesing Code Quality and fixing it.
+
 
 + Formatting
 + Varible Names

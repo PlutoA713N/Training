@@ -14,3 +14,6 @@ In a code, we'll see the following parts when we consider reading others codes. 
 3. In functions, take the arguments upto 3, if we consider more than 3, its hard to refactor the code latter.
 4. A Function should perform ONE & Only ONE task at a time, avoid doing lot of things at a Time.
 5. Use 2 nested loops in a function, Avoid using more than 2, cuz it leads to poor performance of a "For Loop" in order to understand the code
+
+# Reusability
+The modules in the code can be reused anywhere externally , without any modifications to it. The modules must perform one task at a time, it doesnt depend on any internal code, this makes code reusable ,more efficent and less prone errors.
